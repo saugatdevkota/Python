@@ -1,1 +1,0 @@
-print("hy im saugat the legent .. soon going to be king of AI ML")
