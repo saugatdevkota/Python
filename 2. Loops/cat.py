@@ -1,5 +1,5 @@
-"""
 #using while loop to print "Meow" 3 times.
+"""
 i = 0
 while i < 3:
     print("Meow")
@@ -7,6 +7,7 @@ while i < 3:
 print("_____________________________________________")
 
 #Simply goes in list and executes as long as there are items in the list.
+
 for _ in [0, 1, 2]:
     print("Meow")
 print("_____________________________________________")
