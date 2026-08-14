@@ -1,0 +1,8 @@
+[
+  "test/test_hello.py::test_argument",
+  "test/test_hello.py::test_default",
+  "test/test_square.py::test_negative",
+  "test/test_square.py::test_positive",
+  "test/test_square.py::test_str",
+  "test/test_square.py::test_zero"
+]

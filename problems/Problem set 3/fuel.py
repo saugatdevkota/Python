@@ -1,7 +1,5 @@
 def main():
-    x= input_x()
-    y= input_y()
-    percent = round(x/y)
+    percent = get_percentage()
     if percent <=1:
         print("E")
     elif percent >=99:
@@ -9,21 +7,18 @@ def main():
     else:
         print(f"{percent}%")
 
-def input_x():
+def get_percentage():
     while True:
+        fraction = input("Enter fraction i.e x/y: ")
         try:
-            return int(input("Enter Numerator: "))
-        except ValueError:
+            x,y = fraction.split("/")
+            x= int(x)
+            y= int(y)
+            if x<0 or y<=0 or x>y:
+                continue
+            return round(100*x/y)
+
+        except (ValueError, ZeroDivisionError):
             pass
-
-def input_y():
-    while True:
-        try:
-            return int(input("Enter Denominator: "))
-        except ValueError:
-            print("Enter integer: ")
-        except ZeroDivisionError:
-            print("denominator cannot be zero")
-
 
 main()

@@ -5,7 +5,7 @@ def main():
 
 def input_emoji():
     user_input = input("Input: ")
-    return emoji.emojize(user_input)
+    return emoji.emojize(user_input, language='alias')
 
 if __name__ == "__main__":
     main()
